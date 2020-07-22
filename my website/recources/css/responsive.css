@@ -1,0 +1,79 @@
+@media only screen and (max-width:1024px){
+    header{
+        position: relative;
+    }
+    header .main-menu{
+        display: none;
+    }
+    .mobile-menu {
+        float: right;
+       
+        
+    }
+    .mobile-menu-overlay{
+        display: none;
+        position: fixed;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.87);
+        z-index: 10;
+        transform-origin: left;
+        
+    }
+    .mobile-menu button{
+        display: block;
+        color: #f62746;
+        background: transparent;
+        outline: 0;
+        position: relative;
+        font-size: 25px; 
+           
+    }
+    .mobile-menu-overlay ul{
+        margin: auto;
+        list-style: none;
+        margin-top: 10%;
+        margin-left: 30%;
+        line-height: 70px;
+    }
+   
+    .mobile-menu-overlay ul li a{
+        color: #f62746;
+        font-size: 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+    }
+   .mobile-menu-overlay ul li a::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #f62746;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+}
+    .mobile-menu-overlay ul li a::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width:0;
+    background: #f62746;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
